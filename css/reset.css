@@ -1,0 +1,58 @@
+/* reset.css */
+
+/* Que el ancho incluya padding y borde (evita que las cajas "crezcan" de más) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Quita los márgenes y paddings que el navegador pone por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Imágenes que no se salgan de su caja */
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Los botones e inputs heredan la tipografía de la página */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Links sin subrayado ni color azul, para estilizarlos vos */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Listas sin viñetas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Títulos y textos largos que no desborden */
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
